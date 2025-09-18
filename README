@@ -1,0 +1,28 @@
+micro-headers
+-------------
+
+MIT licensed libraries for everyone!
+
+*micro-headers* is a collection of high-quality, configurable,
+header-only libraries written in C99. The libraries are designed to be
+highly reusable, simple to maintain with little to no dependencies,
+and easy to integrate in your projects - just copy-paste the header
+file and #include it!
+
+The code is cross platform and should work with virtually every C or
+C++ compiler. Code style and usage is consistent among all libraries,
+so that they feel familiar among each other. Heavy use of macros is
+usually discouraged to increase readability.
+
+Author:  Giovanni Santini
+Mail:    giovanni.santini@proton.me
+License: MIT
+
+
+Headers
+-------
+
+- hll.h: implementation of HyperLogLog
+- bloom-filter.h: implementation of bloom filters
+- micro-tests.h: lightweight testing framework, with multithread
+                 support and run-time settings.
