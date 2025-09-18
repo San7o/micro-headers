@@ -1,0 +1,9 @@
+[submodule "bloom-filter.h"]
+	path = bloom-filter.h
+	url = https://github.com/San7o/bloom-filter.h.git
+[submodule "hll.h"]
+	path = hll.h
+	url = https://github.com/San7o/hll.h
+[submodule "micro-tests.h"]
+	path = micro-tests.h
+	url = https://github.com/San7o/micro-tests.h
