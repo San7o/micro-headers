@@ -26,3 +26,4 @@ Headers
 - bloom-filter.h: implementation of bloom filters
 - micro-tests.h: lightweight testing framework, with multithread
                  support and run-time settings.
+- micro-hash.h: quick and dirty hash functions, with some benchmarks.
