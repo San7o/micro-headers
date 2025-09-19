@@ -12,7 +12,7 @@ file and #include it!
 The code is cross platform and should work with virtually every C or
 C++ compiler. Code style and usage is consistent among all libraries,
 so that they feel familiar among each other. Heavy use of macros is
-usually discouraged to increase readability.
+usually discouraged to make the code more understandable.
 
 Author:  Giovanni Santini
 Mail:    giovanni.santini@proton.me

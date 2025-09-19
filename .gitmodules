@@ -7,3 +7,6 @@
 [submodule "micro-tests.h"]
 	path = micro-tests.h
 	url = https://github.com/San7o/micro-tests.h
+[submodule "micro-hash.h"]
+	path = micro-hash.h
+	url = https://github.com/San7o/micro-hash.h
