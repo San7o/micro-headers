@@ -10,3 +10,9 @@
 [submodule "micro-hash.h"]
 	path = micro-hash.h
 	url = https://github.com/San7o/micro-hash.h
+[submodule "hashset.h"]
+	path = hashset.h
+	url = https://github.com/San7o/hashset.h.git
+[submodule "hashmap.h"]
+	path = hashmap.h
+	url = https://github.com/San7o/hashmap.h.git

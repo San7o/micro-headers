@@ -27,3 +27,5 @@ Headers
 - micro-tests.h: lightweight testing framework, with multithread
                  support and run-time settings.
 - micro-hash.h: quick and dirty hash functions, with some benchmarks.
+- hashmap.h: implementation of an hashmap for any type
+- hashset.h: implementation of an hashset for any type
