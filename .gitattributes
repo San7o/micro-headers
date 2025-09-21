@@ -1,0 +1,3 @@
+# Force GitHub Linguist to classify this repo as C
+* linguist-detectable=true
+* linguist-language=C
