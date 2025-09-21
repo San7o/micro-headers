@@ -16,3 +16,6 @@
 [submodule "hashmap.h"]
 	path = hashmap.h
 	url = https://github.com/San7o/hashmap.h.git
+[submodule "micro-log.h"]
+	path = micro-log.h
+	url = https://github.com/San7o/micro-log.h

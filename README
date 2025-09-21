@@ -22,10 +22,12 @@ License: MIT
 Headers
 -------
 
-- hll.h: implementation of HyperLogLog
-- bloom-filter.h: implementation of bloom filters
 - micro-tests.h: lightweight testing framework, with multithread
                  support and run-time settings.
+- micro-log.h: configurable, thread safe logging framework. With lots
+               of features. 
 - micro-hash.h: quick and dirty hash functions, with some benchmarks.
+- hll.h: implementation of HyperLogLog
+- bloom-filter.h: implementation of bloom filters
 - hashmap.h: implementation of an hashmap for any type
 - hashset.h: implementation of an hashset for any type
