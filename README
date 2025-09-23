@@ -25,7 +25,8 @@ Headers
 - micro-tests.h: lightweight testing framework, with multithread
                  support and run-time settings.
 - micro-log.h: configurable, thread safe logging framework. With lots
-               of features. 
+               of features.
+- micro-flag.h: tiny library to parse command line arguments.
 - micro-hash.h: quick and dirty hash functions, with some benchmarks.
 - hll.h: implementation of HyperLogLog
 - bloom-filter.h: implementation of bloom filters
