@@ -22,3 +22,6 @@
 [submodule "micro-flag.h"]
 	path = micro-flag.h
 	url = https://github.com/San7o/micro-flag.h.git
+[submodule "micro-draw.h"]
+	path = micro-draw.h
+	url = https://github.com/San7o/micro-draw.h
