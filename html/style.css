@@ -2,7 +2,7 @@ body {
   font-family: monospace;
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr min(80rem, 30%) 1fr;  
+  grid-template-columns: 1fr min(80rem, 35%) 1fr;  
 }
 
 body > * {
@@ -37,8 +37,12 @@ hr {
   width: 100%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1200px) {
 
+  body {
+      grid-template-columns: 1fr min(80rem, 50%) 1fr;
+  }
+    
   h1 {
     font-size: 2.5rem;
   }
@@ -51,3 +55,10 @@ hr {
     font-size: 1.2rem;
   }
 }
+
+
+@media only screen and (max-width: 750px) {
+
+  body {
+      grid-template-columns: 1fr min(80rem, 80%) 1fr;
+  }
