@@ -25,3 +25,6 @@
 [submodule "micro-draw.h"]
 	path = micro-draw.h
 	url = https://github.com/San7o/micro-draw.h
+[submodule "game-of-life.h"]
+	path = game-of-life.h
+	url = https://github.com/San7o/game-of-life.h.git

@@ -33,3 +33,4 @@ Headers
 - bloom-filter.h: implementation of bloom filters
 - hashmap.h: implementation of an hashmap for any type
 - hashset.h: implementation of an hashset for any type
+- game-of-life.h: Conway's Game of Life logic implementation
