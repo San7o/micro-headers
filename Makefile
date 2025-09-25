@@ -15,3 +15,6 @@ html:
 	cat ${HTML_OUTRO} >> ${OUT_INDEX_FILE}
 	rm ${TMP_FILE}
 
+.PHONY: update
+update:
+	git submodule update --recursive --remote
