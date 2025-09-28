@@ -22,15 +22,41 @@ License: MIT
 Headers
 -------
 
-- micro-tests.h: lightweight testing framework, with multithread
-                 support and run-time settings.
-- micro-log.h: configurable, thread safe logging framework. With lots
-               of features.
-- micro-flag.h: tiny library to parse command line arguments.
-- micro-draw.h: a software renderer
-- micro-hash.h: quick and dirty hash functions, with some benchmarks.
-- hll.h: implementation of HyperLogLog
-- bloom-filter.h: implementation of bloom filters
-- hashmap.h: implementation of an hashmap for any type
-- hashset.h: implementation of an hashset for any type
-- game-of-life.h: Conway's Game of Life logic implementation
+- micro-tests.h:
+       lightweight testing framework, with multithread support and
+       run-time settings.
+                 
+- micro-log.h:
+        configurable, thread safe logging framework. With lots of
+        features.
+                 
+- micro-flag.h:
+        tiny library to parse command line arguments.
+
+- micro-draw.h:
+        a software renderer
+
+- micro-hash.h:
+        quick and dirty hash functions, with some benchmarks.
+
+- hll.h:
+        implementation of HyperLogLog for approximating the cardinality
+         of large multisets.
+
+- bloom-filter.h:
+        implementation of bloom filters, a space-efficient
+        probabilistic data structure that is used to test whether an
+        element is a member of a set. 
+
+- consistent-hashing.h:
+       implementation of consistent hashing, useful for distributing
+       keys across a dynamic set of nodes.
+
+- hashmap.h:
+        implementation of an hashmap for any type.
+
+- hashset.h:
+        implementation of an hashset for any type.
+                 
+- game-of-life.h:
+        Conway's Game of Life logic implementation

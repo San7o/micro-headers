@@ -28,3 +28,6 @@
 [submodule "game-of-life.h"]
 	path = game-of-life.h
 	url = https://github.com/San7o/game-of-life.h.git
+[submodule "consistent-hasher.h"]
+	path = consistent-hasher.h
+	url = https://github.com/San7o/consistent-hasher.h.git
