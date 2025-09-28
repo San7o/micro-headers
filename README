@@ -23,13 +23,16 @@ Headers
 -------
 
 - micro-tests.h:
-       lightweight testing framework, with multithread support and
-       run-time settings.
-                 
+        lightweight testing framework, with multithread support and
+        run-time settings.
+
 - micro-log.h:
         configurable, thread safe logging framework. With lots of
         features.
-                 
+
+- micro-bench.h
+        micro benchmarking library
+
 - micro-flag.h:
         tiny library to parse command line arguments.
 
@@ -41,7 +44,7 @@ Headers
 
 - hll.h:
         implementation of HyperLogLog for approximating the cardinality
-         of large multisets.
+        of large multisets.
 
 - bloom-filter.h:
         implementation of bloom filters, a space-efficient
@@ -49,8 +52,8 @@ Headers
         element is a member of a set. 
 
 - consistent-hasher.h:
-       implementation of consistent hashing, useful for distributing
-       keys across a dynamic set of nodes.
+        implementation of consistent hashing, useful for distributing
+        keys across a dynamic set of nodes.
 
 - hashmap.h:
         implementation of an hashmap for any type.

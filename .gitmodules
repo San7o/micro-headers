@@ -31,3 +31,6 @@
 [submodule "consistent-hasher.h"]
 	path = consistent-hasher.h
 	url = https://github.com/San7o/consistent-hasher.h.git
+[submodule "micro-bench.h"]
+	path = micro-bench.h
+	url = https://github.com/San7o/micro-bench.h.git
