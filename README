@@ -60,6 +60,9 @@ Headers
 
 - hashset.h:
         implementation of an hashset for any type.
+
+- llist.h:
+        implementation of a type-safe, generic doubly-linked list.
                  
 - game-of-life.h:
-        Conway's Game of Life logic implementation
+        Conway's Game of Life logic implementation.

@@ -34,3 +34,6 @@
 [submodule "micro-bench.h"]
 	path = micro-bench.h
 	url = https://github.com/San7o/micro-bench.h.git
+[submodule "llist.h"]
+	path = llist.h
+	url = https://github.com/San7o/llist.h.git
