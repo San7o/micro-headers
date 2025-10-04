@@ -37,3 +37,6 @@
 [submodule "llist.h"]
 	path = llist.h
 	url = https://github.com/San7o/llist.h.git
+[submodule "rendezvous-hasher.h"]
+	path = rendezvous-hasher.h
+	url = https://github.com/San7o/rendezvous-hasher.h.git
