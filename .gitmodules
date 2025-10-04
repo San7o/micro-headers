@@ -40,3 +40,6 @@
 [submodule "rendezvous-hasher.h"]
 	path = rendezvous-hasher.h
 	url = https://github.com/San7o/rendezvous-hasher.h.git
+[submodule "micro-serde.h"]
+	path = micro-serde.h
+	url = https://github.com/San7o/micro-serde.h.git

@@ -30,14 +30,17 @@ Headers
         configurable, thread safe logging framework. With lots of
         features.
 
+- micro-draw.h:
+        a 2D software renderer
+
+- micro-serde.h:
+        serialization library for C99, in ~150 lines of code.
+
 - micro-bench.h
         micro benchmarking library
 
 - micro-flag.h:
         tiny library to parse command line arguments.
-
-- micro-draw.h:
-        a software renderer
 
 - micro-hash.h:
         quick and dirty hash functions, with some benchmarks.
