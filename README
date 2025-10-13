@@ -71,6 +71,9 @@ Headers
 
 - llist.h:
         implementation of a type-safe, generic doubly-linked list.
-                 
+
+- liblaunchpad.h:
+         an abstraction layer over Novation's Launchpad S through ALSA.
+
 - game-of-life.h:
         Conway's Game of Life logic implementation.

@@ -43,3 +43,6 @@
 [submodule "micro-serde.h"]
 	path = micro-serde.h
 	url = https://github.com/San7o/micro-serde.h.git
+[submodule "liblaunchpad.h"]
+	path = liblaunchpad.h
+	url = https://github.com/San7o/liblaunchpad.h
