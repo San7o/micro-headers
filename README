@@ -26,54 +26,86 @@ Headers
         lightweight testing framework, with multithread support and
         run-time settings.
 
+            https://github.com/San7o/micro-tests.h
+
 - micro-log.h:
         configurable, thread safe logging framework. With lots of
         features.
 
+            https://github.com/San7o/micro-log.h
+
 - micro-draw.h:
         a 2D software renderer
+
+            https://github.com/San7o/micro-draw.h
 
 - micro-serde.h:
         serialization library for C99, in ~150 lines of code.
 
+            https://github.com/San7o/micro-serde.h
+
 - micro-bench.h
         micro benchmarking library
+
+            https://github.com/San7o/micro-bench.h
 
 - micro-flag.h:
         tiny library to parse command line arguments.
 
+            https://github.com/San7o/micro-flag.h
+
 - micro-hash.h:
         quick and dirty hash functions, with some benchmarks.
+
+            https://github.com/San7o/micro-hash.h
 
 - hll.h:
         implementation of HyperLogLog for approximating the cardinality
         of large multisets.
+
+            https://github.com/San7o/hll.h
 
 - bloom-filter.h:
         implementation of bloom filters, a space-efficient
         probabilistic data structure that is used to test whether an
         element is a member of a set. 
 
+            https://github.com/San7o/bloom-filter.h
+
 - rendezvous-hasher.h:
         dependency-free implementation of Rendezvous Hashing (a.k.a.
         Highest Random Weight hashing), useful for distributing keys
         across a dynamic set of nodes.
 
+            https://github.com/San7o/rendezvous-hasher.h
+
 - consistent-hasher.h:
         implementation of consistent hashing, alternative to Rendezvous
         Hashing.
 
+            https://github.com/San7o/consistent-hasher.h
+
 - hashmap.h:
         implementation of an hashmap for any type.
+
+            https://github.com/San7o/hashmap.h
 
 - hashset.h:
         implementation of an hashset for any type.
 
+            https://github.com/San7o/hashset.h
+
 - llist.h:
         implementation of a type-safe, generic doubly-linked list.
+
+            https://github.com/San7o/llist.h
 
 - liblaunchpad.h:
          an abstraction layer over Novation's Launchpad S through ALSA.
 
+            https://github.com/San7o/liblaunchpad.h
+
 - game-of-life.h:
         Conway's Game of Life logic implementation.
+
+            https://github.com/San7o/game-of-life.h

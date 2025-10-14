@@ -1,0 +1,136 @@
+What are header-only libraries?
+===============================
+
+C code is commonly split over two types of files: .h headers
+containing declarations, and .c files for their definitions. Usually,
+.c files include header files in their translation unit; one header
+may be imported in multiple .c files for sharing common declarations
+such as structs, typedefs and functions. The separation of the two
+files is necessary because the presence of multiple definitions for
+the same declaration with external linkage is not allowed (in C++,
+this is referred to as the One Definition Rule or ODR), hence they
+should only appear in a single translation unit (the .c file).
+
+C11 - 6.9 External definitions:
+
+> There shall be no more than one external definition for each
+> identifier declared with internal linkage in a translation
+> unit. Moreover, if an identifier declared with internal linkage is
+> used in an expression (other than as a part of the operand of a
+> sizeof or _Alignof operator whose result is an integer constant),
+> there shall be exactly one external definition for the identifier in
+> the translation unit
+
+Note that this only applies to external definitions. For `static`
+storage class there may be multiple definitions of the same symbol in
+multiple translation units.
+
+Header-only libraries break the convention of .c and .h files by
+providing both declarations and definitions in a single file, usually
+an header since it is supposed to be included elsewhere. To make this
+possible without providing the same definition more than once, all
+user-facing definitions are guarded by an IMPLEMENTATION symbol
+defined at compile time in a single translation unit.
+
+The structure of a header-only library looks like the following:
+
+
+    #ifndef MY_LIBRARY
+    #define MY_LIBRARY
+
+    // Declarations
+
+    int my_library_sum(int a, int b);
+
+    #ifdef MY_LIBRARY_IMPLEMENTATION
+
+    // Definitions
+
+    int my_library_sum(int a, int b)
+    {
+      return a + b;
+    }
+
+    #endif // MY_LIBRARY_IMPLEMENTATION
+
+    #endif // MY_LIBRARY
+
+
+Practically, if you define the IMPLEMENTATION in a single translation
+unit, all the definitions will be included and compiled in that
+translation unit. Hence, they will be available for linkage by the
+other translation units (assuming the symbols were defined
+externally).
+
+The main advantage of this style of writing libraries is the
+convenience of using an entire library just by including a single
+file. That file can be easily managed in your version control system
+like git, and often contains all the documentation you need to use
+it. Quick, nice and simple.
+
+Obviously this type of headers make sense for libraries that are
+limited in size and provide only a few functionalities, not for
+writing an operating system.
+
+
+A note on inlining
+------------------
+
+For performance reasons, you may want the compiler to inline certain
+functions. By inlining a function, you remove all the function calling
+setup needed by your system, like copying the arguments to the stack
+and saving some registers. In C, the function specifier `inline` hints
+the compiler to do so.
+
+C11 Draft - 6.7.4 Function specifiers:
+
+> A function declared with an inline function specifier is an inline
+> function. Making a function an inline function suggests that calls
+> to the function be as fast as possible. The extent to which such
+> suggestions are effective is implementation-defined.
+>
+> Any function with internal linkage can be an inline function. For a
+> function with external linkage, the following restrictions apply: If
+> a function is declared with an inline function specifier, then it
+> shall also be defined in the same translation unit. [...] An inline
+> definition does not provide an external definition for the function,
+> and does not forbid an external definition in another translation
+> unit. An inline definition provides an alternative to an external
+> definition, which a translator may use to implement any call to the
+> function in the same translation unit. It is unspecified whether a
+> call to the function uses the inline definition or the external
+> definition.
+
+When it comes to inlining, your options are the following:
+
+  - you can use just the `inline` specifier and provide the definition
+    in the same translation unit, but you also need to provide an
+    external symbol.
+  - You can use `extern inline` to also export the symbol, but then
+    the compiler will not be able to inline it in other translation
+    units because he does not know the definition.
+  - Lastly, you can use `static inline` to both define a symbol that
+    is valid only in this translation unit (so we don't have problems
+    with multiple definitions) and that can be inlined since you also
+    need to provide the definition.
+
+This last option is the preferred one. If you want to allow the
+compiler to inline the functions, you need to both define the
+IMPLEMENTATION in every .c file, and set the storage class to static
+inline. This usually can be done by defining an API value that will
+be placed before any declaration and definition, for example:
+
+    #define MICRO_TEST_API static inline
+
+
+About the micro-headers
+-----------------------
+
+The micro headers are a very useful collection of header-only
+libraries. I use them for my own projects and needs, but I believe
+they can be useful to other programmer's too. Through the
+micro-headers, I learned a lot about C and writing libraries. The
+choice of C99 is more stylistic / preferential than a technical one. I
+deeply enjoy C for its simplicity, stability and the comfort that I
+feel when programming and having everything under my control. Very few
+languages are able to achieve all of the above.
