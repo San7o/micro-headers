@@ -46,3 +46,6 @@
 [submodule "liblaunchpad.h"]
 	path = liblaunchpad.h
 	url = https://github.com/San7o/liblaunchpad.h
+[submodule "micro-example.h"]
+	path = micro-example.h
+	url = https://github.com/San7o/micro-example.h.git

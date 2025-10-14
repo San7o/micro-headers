@@ -110,6 +110,12 @@ Headers
 
             https://github.com/San7o/game-of-life.h
 
+- micro-example.h:
+          An example header-only library in C99 used as a template
+          project, in the style of the great micro-headers. 
+
+            https://github.com/San7o/micro-example.h
+
 
 Related Projects
 ----------------
