@@ -112,10 +112,12 @@ When it comes to inlining, your options are the following:
   - Lastly, you can use `static inline` to both define a symbol that
     is valid only in this translation unit (so we don't have problems
     with multiple definitions) and that can be inlined since you also
-    need to provide the definition.
+    need to provide the definition. Although the binary size will be
+    larger and compilation time will be slower, since multiple copies
+    of the same function will be compiled.
 
-This last option is the preferred one. If you want to allow the
-compiler to inline the functions, you need to both define the
+This last option is the best one for inlining. If you want to allow
+the compiler to inline the functions, you need to both define the
 IMPLEMENTATION in every .c file, and set the storage class to static
 inline. This usually can be done by defining a known value specified
 in the header that will be placed before any declaration and
