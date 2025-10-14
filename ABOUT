@@ -117,10 +117,11 @@ When it comes to inlining, your options are the following:
 This last option is the preferred one. If you want to allow the
 compiler to inline the functions, you need to both define the
 IMPLEMENTATION in every .c file, and set the storage class to static
-inline. This usually can be done by defining an API value that will
-be placed before any declaration and definition, for example:
+inline. This usually can be done by defining a known value specified
+in the header that will be placed before any declaration and
+definition, for example:
 
-    #define MICRO_TEST_API static inline
+    #define MICRO_TEST_DEF static inline
 
 
 About the micro-headers
