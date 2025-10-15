@@ -7,13 +7,14 @@ PANDOC_FLAGS=
 
 all: html
 
-.PHONY: html
-html:
-	pandoc ${INDEX_FILE} -o ${TMP_FILE} ${PANDOC_FLAGS}
-	cp ${HTML_INTRO} ${OUT_INDEX_FILE}
-	cat ${TMP_FILE} >> ${OUT_INDEX_FILE}
-	cat ${HTML_OUTRO} >> ${OUT_INDEX_FILE}
-	rm ${TMP_FILE}
+# Documentation is not automatically generated anymore
+#.PHONY: html
+#html:
+#	pandoc ${INDEX_FILE} -o ${TMP_FILE} ${PANDOC_FLAGS}
+#	cp ${HTML_INTRO} ${OUT_INDEX_FILE}
+#	cat ${TMP_FILE} >> ${OUT_INDEX_FILE}
+#	cat ${HTML_OUTRO} >> ${OUT_INDEX_FILE}
+#	rm ${TMP_FILE}
 
 .PHONY: update
 update:

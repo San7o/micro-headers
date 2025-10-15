@@ -2,7 +2,9 @@ body {
   font-family: monospace;
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr min(80rem, 35%) 1fr;  
+  grid-template-columns: 1fr min(80rem, 65%) 1fr;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 body > * {
@@ -37,10 +39,10 @@ hr {
   width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
 
   body {
-      grid-template-columns: 1fr min(80rem, 50%) 1fr;
+      grid-template-columns: 1fr min(80rem, 75%) 1fr;
   }
     
   h1 {

@@ -1,90 +1,203 @@
+<!--
+
+    The micro-headers website
+    =========================
+    
+    Author:  Giovanni Santini
+    Mail:    giovanni.santini@proton.me
+    License: MIT
+
+  -->
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="syntax.css" />
-</head>
-<body>
-<h1 id="micro-headers">micro-headers</h1>
-<p>MIT licensed libraries for everyone!</p>
-<p><em>micro-headers</em> is a collection of high-quality, configurable,
-header-only libraries written in C99. The libraries are designed to be
-highly reusable, simple to maintain with little to no dependencies, and
-easy to integrate in your projects - just copy-paste the header file and
-#include it!</p>
-<p>The code is cross platform and should work with virtually every C or
-C++ compiler. Code style and usage is consistent among all libraries, so
-that they feel familiar among each other. Heavy use of macros is usually
-discouraged to make the code more understandable.</p>
-<p>Author: Giovanni Santini Mail: giovanni.santini@proton.me License:
-MIT</p>
-<h2 id="headers">Headers</h2>
-<ul>
-<li><p>micro-tests.h: lightweight testing framework, with multithread
-support and run-time settings.</p>
-<pre><code>      https://github.com/San7o/micro-tests.h</code></pre></li>
-<li><p>micro-log.h: configurable, thread safe logging framework. With
-lots of features.</p>
-<pre><code>      https://github.com/San7o/micro-log.h</code></pre></li>
-<li><p>micro-draw.h: a 2D software renderer</p>
-<pre><code>      https://github.com/San7o/micro-draw.h</code></pre></li>
-<li><p>micro-serde.h: serialization library for C99, in ~150 lines of
-code.</p>
-<pre><code>      https://github.com/San7o/micro-serde.h</code></pre></li>
-<li><p>micro-bench.h micro benchmarking library</p>
-<pre><code>      https://github.com/San7o/micro-bench.h</code></pre></li>
-<li><p>micro-flag.h: tiny library to parse command line arguments.</p>
-<pre><code>      https://github.com/San7o/micro-flag.h</code></pre></li>
-<li><p>micro-module.h: define, load, and unload runtime modules /
-plugins with a simple C99 API.</p>
-<pre><code>      https://github.com/San7o/micro-module.h</code></pre></li>
-<li><p>micro-hash.h: quick and dirty hash functions, with some
-benchmarks.</p>
-<pre><code>      https://github.com/San7o/micro-hash.h</code></pre></li>
-<li><p>hll.h: implementation of HyperLogLog for approximating the
-cardinality of large multisets.</p>
-<pre><code>      https://github.com/San7o/hll.h</code></pre></li>
-<li><p>bloom-filter.h: implementation of bloom filters, a
-space-efficient probabilistic data structure that is used to test
-whether an element is a member of a set.</p>
-<pre><code>      https://github.com/San7o/bloom-filter.h</code></pre></li>
-<li><p>rendezvous-hasher.h: dependency-free implementation of Rendezvous
-Hashing (a.k.a. Highest Random Weight hashing), useful for distributing
-keys across a dynamic set of nodes.</p>
-<pre><code>      https://github.com/San7o/rendezvous-hasher.h</code></pre></li>
-<li><p>consistent-hasher.h: implementation of consistent hashing,
-alternative to Rendezvous Hashing.</p>
-<pre><code>      https://github.com/San7o/consistent-hasher.h</code></pre></li>
-<li><p>hashmap.h: implementation of an hashmap for any type.</p>
-<pre><code>      https://github.com/San7o/hashmap.h</code></pre></li>
-<li><p>hashset.h: implementation of an hashset for any type.</p>
-<pre><code>      https://github.com/San7o/hashset.h</code></pre></li>
-<li><p>llist.h: implementation of a type-safe, generic doubly-linked
-list.</p>
-<pre><code>      https://github.com/San7o/llist.h</code></pre></li>
-<li><p>liblaunchpad.h: an abstraction layer over Novation’s Launchpad S
-through ALSA.</p>
-<pre><code>      https://github.com/San7o/liblaunchpad.h</code></pre></li>
-<li><p>game-of-life.h: Conway’s Game of Life logic implementation.</p>
-<pre><code>      https://github.com/San7o/game-of-life.h</code></pre></li>
-<li><p>micro-example.h: An example header-only library in C99 used as a
-template project, in the style of the great micro-headers.</p>
-<pre><code>      https://github.com/San7o/micro-example.h</code></pre></li>
-</ul>
-<h2 id="related-projects">Related Projects</h2>
-<p>Check out the micro-tools:</p>
-<pre><code>https://github.com/San7o/micro-tools</code></pre>
-
-<footer>
   
-<hr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>micro-headers: lightweight C99 libraries</title>
 
-<p>author: Giovanni Santini <br>
-  email: <a href="mailto:giovanni.santini@proton.me">giovanni.santini@proton.me</a><br>
-  blog: <a href="https://giovanni-diary.netlify.app/">giovanni-diary.netlify.app</a><br>
-  code: <a href="https://github.com/San7o/micro-headers">GitHub@San7o/micro-headers</a><br>
-  license <a href="https://github.com/San7o/micro-headers/LICENSE">MIT</a></p>
-</footer>
+    <meta name="description" content="A collection of lightweight, header-only C99 libraries (micro-headers) for testing, logging, serialization, hashing, and data structures by Giovanni Santini." />
+    <meta name="keywords" content="C99, header-only, lightweight, micro-header, testing, logging, serialization, hashmap, bloom filter, data structures" />
+    <meta name="author" content="San7o" />
 
-</body>
+    <meta property="og:title" content="micro-headers: lightweight C99 libraries" />
+    <meta property="og:description" content="A curated list of lightweight, header-only C99 libraries (micro-headers) for testing, logging, serialization, hashing, and data structures." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://san7o.github.io/micro-headers/" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  
+  <body>
+    <h1 id="micro-headers">micro-headers</h1>
+    <h4>MIT licensed libraries for everyone!</h4>
+    
+    <p>
+      <em>micro-headers</em> is a collection of high-quality,
+      configurable, header-only libraries written in C99. The
+      libraries are designed to be highly reusable, simple to maintain
+      with little to no dependencies, and easy to integrate in your
+      projects - just copy-paste the header file and #include it!
+    </p>
+
+
+    <a style="padding: 10px 15px;" href="https://github.com/San7o/micro-headers">https://github.com/San7o/micro-headers</a>
+    
+    <p>
+      The code is cross platform and should work with virtually every
+      C or C++ compiler. Code style and usage is consistent in all
+      libraries, so that they feel familiar among each other. Heavy
+      use of macros is usually discouraged to make the code more
+      understandable.
+    </p>
+    <p>
+      Author: Giovanni Santini </br>
+      Mail: giovanni.santini@proton.me </br>
+      GitHub: <a href="https://github.com/San7o/">@San7o</a> </br>
+      License: MIT </br>
+    </p>
+
+    <h2 id="headers">Headers</h2>
+    <ul>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-tests.h">micro-tests.h</a>:
+          lightweight testing framework, with multithread
+          support and run-time settings.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-log.h">micro-log.h</a>:
+          configurable, thread safe logging framework. With
+          lots of features.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-draw.h">micro-draw.h</a>:
+          a 2D software renderer
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-serde.h">micro-serde.h</a>:
+          serialization library for C99, in ~150 lines of
+          code.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-bench.h">micro-bench.h</a>:
+          micro benchmarking library
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-flag.h">micro-flag.h</a>:
+          tiny library to parse command line arguments.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-module.h">micro-module.h</a>:
+          define, load, and unload runtime modules /
+          plugins with a simple C99 API.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-hash.h">micro-hash.h</a>:
+          quick and dirty hash functions, with some
+          benchmarks.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/hll.h">hll.h</a>:
+          implementation of HyperLogLog for approximating the
+          cardinality of large multisets.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/bloom-filter.h">bloom-filter.h</a>:
+          implementation of bloom filters, a
+          space-efficient probabilistic data structure that is used to test
+          whether an element is a member of a set.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/rendezvous-hasher.h">rendezvous-hasher.h</a>:
+          dependency-free implementation of Rendezvous
+          Hashing (a.k.a. Highest Random Weight hashing), useful for distributing
+          keys across a dynamic set of nodes.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/consistent-hasher.h">consistent-hasher.h</a>:
+          implementation of consistent hashing,
+          alternative to Rendezvous Hashing.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/hashmap.h">hashmap.h</a>:
+          implementation of an hashmap for any type.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/hashset.h">hashset.h</a>:
+          implementation of an hashset for any type.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/llist.h">llist.h</a>:
+          implementation of a type-safe, generic doubly-linked
+          list.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/liblaunchpad.h">liblaunchpad.h</a>:
+          an abstraction layer over Novation's Launchpad S
+          through ALSA.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/game-of-life.h">game-of-life.h</a>:
+          Conway’s Game of Life logic implementation.
+        </p>
+      </li>
+      <li>
+        <p>
+          <a href="https://github.com/San7o/micro-example.h">micro-example.h</a>:
+          An example header-only library in C99 used as a
+          template project, in the style of the great micro-headers.
+        </p>
+      </li>
+    </ul>
+    
+    <h2 id="related-projects">Related Projects</h2>
+    <p>Check out the micro-tools:
+      <a href="https://github.com/San7o/micro-tools">https://github.com/San7o/micro-tools</a>
+    </p>
+
+    <footer>
+      
+      <hr>
+
+      <p>author: Giovanni Santini <br>
+        email: <a href="mailto:giovanni.santini@proton.me">giovanni.santini@proton.me</a><br>
+        blog: <a href="https://giovanni-diary.netlify.app/">giovanni-diary.netlify.app</a><br>
+        code: <a href="https://github.com/San7o/micro-headers">GitHub@San7o/micro-headers</a><br>
+        license <a href="https://github.com/San7o/micro-headers/LICENSE">MIT</a></p>
+    </footer>
+
+  </body>
 </html>
