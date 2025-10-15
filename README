@@ -54,6 +54,12 @@ Headers
 
             https://github.com/San7o/micro-flag.h
 
+- micro-module.h:
+        define, load, and unload runtime modules / plugins with a
+        simple C99 API.
+        
+            https://github.com/San7o/micro-module.h
+
 - micro-hash.h:
         quick and dirty hash functions, with some benchmarks.
 
