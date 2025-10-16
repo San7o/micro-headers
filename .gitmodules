@@ -52,3 +52,6 @@
 [submodule "micro-module.h"]
 	path = micro-module.h
 	url = https://github.com/San7o/micro-module.h
+[submodule "micro-la.h"]
+	path = micro-la.h
+	url = https://github.com/San7o/micro-la.h

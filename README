@@ -65,6 +65,11 @@ Headers
 
             https://github.com/San7o/micro-hash.h
 
+- micro-la.h:
+        linear algebra types and functions
+
+            https://github.com/San7o/micro-la.h
+
 - hll.h:
         implementation of HyperLogLog for approximating the cardinality
         of large multisets.
