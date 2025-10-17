@@ -60,6 +60,11 @@ Headers
         
             https://github.com/San7o/micro-module.h
 
+- micro-conf.h:
+        library to parse config files.
+
+            https://github.com/San7o/micro-conf.h
+
 - micro-hash.h:
         quick and dirty hash functions, with some benchmarks.
 
