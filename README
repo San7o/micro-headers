@@ -35,7 +35,7 @@ Headers
             https://github.com/San7o/micro-log.h
 
 - micro-draw.h:
-        a 2D software renderer
+        a 2D software renderer.
 
             https://github.com/San7o/micro-draw.h
 
@@ -45,7 +45,7 @@ Headers
             https://github.com/San7o/micro-serde.h
 
 - micro-bench.h
-        micro benchmarking library
+        micro benchmarking library.
 
             https://github.com/San7o/micro-bench.h
 
@@ -66,7 +66,7 @@ Headers
             https://github.com/San7o/micro-hash.h
 
 - micro-la.h:
-        linear algebra types and functions
+        linear algebra types and functions.
 
             https://github.com/San7o/micro-la.h
 

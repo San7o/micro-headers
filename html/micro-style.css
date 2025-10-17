@@ -23,10 +23,10 @@
     color-scheme: dark;
     --bg: #000000;
     --text: #FFFFFF;
-  --link: #4dc5ff;
-  --link-visited: #39a7d9;
-  --link-hover: #66d9ff;
-  --link-active: #1fb6ff;
+    --link: #4dc5ff;
+    --link-visited: #39a7d9;
+    --link-hover: #66d9ff;
+    --link-active: #1fb6ff;
   }
 }
 
