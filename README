@@ -39,6 +39,11 @@ Headers
 
             https://github.com/San7o/micro-draw.h
 
+- micro-lex.h:
+        simple lexer for lisp-like languages, and others.
+
+            https://github.com/San7o/micro-lex.h
+
 - micro-serde.h:
         serialization library for C99, in ~150 lines of code.
 

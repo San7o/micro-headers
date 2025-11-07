@@ -58,3 +58,6 @@
 [submodule "micro-conf.h"]
 	path = micro-conf.h
 	url = https://github.com/San7o/micro-conf.h.git
+[submodule "micro-lex.h"]
+	path = micro-lex.h
+	url = https://github.com/San7o/micro-lex.h.git
