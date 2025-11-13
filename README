@@ -44,6 +44,12 @@ Headers
 
             https://github.com/San7o/micro-lex.h
 
+- micro-arena.h:
+        memory allocator (first fit). It implements the common memory
+        function from stdlib.h.
+
+            https://github.com/San7o/micro-arena.h
+
 - micro-serde.h:
         serialization library for C99, in ~150 lines of code.
 
