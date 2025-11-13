@@ -46,7 +46,7 @@ Headers
 
 - micro-arena.h:
         memory allocator (first fit). It implements the common memory
-        function from stdlib.h.
+        functions from stdlib.h.
 
             https://github.com/San7o/micro-arena.h
 
