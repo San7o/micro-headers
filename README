@@ -9,10 +9,13 @@ highly reusable, simple to maintain with little to no dependencies,
 and easy to integrate in your projects - just copy-paste the header
 file and #include it!
 
-The code is cross platform and should work with virtually every C or
-C++ compiler. Code style and usage is consistent among all libraries,
-so that they feel familiar among each other. Heavy use of macros is
-usually discouraged to make the code more understandable.
+The code is mainly developed for Linux, since this is what I use, but
+it should work fine in other operating systems (with a little tweaking
+maybe). All libraries are C99 compliant so they should work with
+virtually every C or C++ compiler. Code style and usage is consistent
+among all libraries, so that they feel familiar among each
+other. Heavy use of macros is usually discouraged to make the code
+more understandable.
 
 Author:  Giovanni Santini
 Mail:    giovanni.santini@proton.me
