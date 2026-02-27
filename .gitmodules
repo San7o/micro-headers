@@ -64,3 +64,6 @@
 [submodule "micro-arena.h"]
 	path = micro-arena.h
 	url = https://github.com/San7o/micro-arena.h/
+[submodule "micro-fswatcher.h"]
+	path = micro-fswatcher.h
+	url = https://github.com/San7o/micro-fswatcher.h.git

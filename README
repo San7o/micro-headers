@@ -79,6 +79,11 @@ Headers
 
             https://github.com/San7o/micro-conf.h
 
+- micro-fswatcher.h:
+         listen to events in multiple files on the filesystem.
+
+            https://github.com/San7o/micro-fswatcher.h
+
 - micro-hash.h:
         quick and dirty hash functions, with some benchmarks.
 
