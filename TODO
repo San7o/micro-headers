@@ -1,0 +1,10 @@
+TODO
+====
+
+Ideas for other libraries:
+
+- micro-compress: compression / decompression, for example with
+  Run-Length Encoding
+- micro-num: number operations of any size, like the GNU MP Bignum
+  Library
+- micro-nn: neural network implementation
